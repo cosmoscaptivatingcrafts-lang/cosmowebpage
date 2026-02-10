@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What We Create | Cosmo's Captivating Crafts, LLC</title>
+ 
+ <meta name="description" content="Made-to-order custom creations including event décor, personalized gifts, apparel, home décor, and customized car accessories. Every piece is crafted with intention.">
+
+  <link rel="icon" href="assets/logo.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="glossy">
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-flex">
+    <a class="brand-wrap" href="index.html">
+      <h1 class="brand">Cosmo's Captivating Crafts, LLC</h1>
+    </a>
+
+ <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+     <nav id="primary-nav" class="nav" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Our Story</a>
+      <a href="products.html">What We Create</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-text">
+    <h2>Custom Creations, Designed With Purpose</h2>
+    <p>
+     “Every item we create is thoughtfully designed and personalized 
+     to reflect your vision — tailored with care, not mass produced.”
+    </p>
+  </div>
+</section>
+
+<!-- WHAT WE CREATE -->
+<section class="section container" id="products">
+  <h3>What We Create</h3>
+
+  <p class="small center">
+    The collections below highlight some of our most requested work.
+    If you don’t see exactly what you’re looking for, reach out —
+    customization is what we do best.
+  </p>
+
+<!-- GALLERY GRID -->
+<section class="section container">
+  <div class="grid" id="gallery">
+
+    <!-- EVENTS -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/bannergrad.png" class="card-img" alt="Event and celebration creations">
+      </div>
+      <h4>Event & Celebration Creations</h4>
+      <p>Coordinated décor and custom details for birthdays, baby showers, graduations, holidays, and milestone moments.</p>
+    </div>
+
+    <!-- GIFTS & DRINKWARE -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/mem necklace.jpeg" class="card-img" alt="Personalized gifts and drinkware">
+      </div>
+      <h4>Personalized Gifts & Drinkware</h4>
+      <p>Custom drinkware and keepsakes made with names, photos, messages, or designs — perfect for gifting or everyday use.</p>
+    </div>
+
+    <!-- HOME DECOR -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/pillow.jpg" class="card-img" alt="Custom home décor">
+      </div>
+      <h4>Home & Interior Décor</h4>
+      <p>Thoughtfully designed décor pieces that complement your space and style — from subtle accents to bold statement designs.</p>
+    </div>
+
+    <!-- APPAREL -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/hoodie.png" class="card-img" alt="Custom apparel and wearables">
+      </div>
+      <h4>Apparel & Wearables</h4>
+      <p>Custom apparel for individuals, groups, businesses, and events — created to express identity, unity, and creativity.</p>
+    </div>
+
+    <!-- CAR ACCESSORIES -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/Car-decal.jpg" class="card-img" alt="Customized car accessories">
+      </div>
+      <h4>Customized Car Accessories</h4>
+      <p>Personalized car accessories designed to elevate your ride — whether sleek and minimal or bold and expressive.</p>
+    </div>
+
+    <!-- FUNERAL & MEMORIAL -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/ribbons.jpg" alt="Funeral and memorial arrangements" class="card-img" />
+      </div>
+      <h4>Funeral & Memorial Arrangements</h4>
+      <p>Obituaries, memorial ribbons, pins, keepsakes, and personalized memorial signs to honor your loved ones.</p>
+    </div>
+
+    <!-- BUSINESS SETUP & PROMO -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/tshirt ad.jpg" alt="Business promotional materials" class="card-img" />
+      </div>
+      <h4>Business Setup & Promotional Materials</h4>
+      <p>Flyers, event planning, yard signs, business cards, prints, and everything needed to launch or promote your business.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-soft">
+  <div class="container center">
+    <h3>Let’s Create Something Custom</h3>
+    <p>
+      Have an idea in mind or need help bringing one together?
+      Tell us about your project and we’ll take it from there.
+    </p>
+
+    <form
+      action="https://formspree.io/f/xanplyen"
+      method="POST"
+      class="contact-form"
+    >
+      <div class="form-grid">
+        <label class="field">
+          <span>Your Name</span>
+          <input type="text" name="name" placeholder="Jane Doe" required />
+        </label>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="_replyto" placeholder="you@example.com" required />
+        </label>
+      </div>
+
+      <label class="field full">
+        <span>Project Details</span>
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Tell us what you’re envisioning — item type, colors, quantity, timeline…"
+          required
+        ></textarea>
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© <span id="y"></span> Cosmo's Captivating Crafts, LLC • Mound Bayou, MS</p>
+</footer>
+
+ <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosmo's Captivating Crafts, LLC</title>
+  <meta name="description" content="Handmade with love — tumblers, t-shirts, banners & more.">
+  <link rel="icon" href="assets/logo.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="glossy">
+
+<!-- HEADER -->
+<header class="site-header" id="top">
+  <div class="container header-flex">
+    <a class="brand-wrap" href="#top" aria-label="Home">
+      <h1 class="brand">Cosmo's Captivating Crafts, LLC</h1>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav id="primary-nav" class="nav" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Our Story</a>
+      <a href="products.html">What We Create</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" aria-label="Hero banner">
+  <div class="overlay"></div>
+
+  <div class="hero-text">
+    <h2>Handmade Crafts, Designed With Love</h2>
+    <p>
+      From custom tumblers to apparel, banners, and décor — every item is made-to-order
+      with care, creativity, and attention to detail.
+    </p>
+  </div>
+</section>
+
+<main>
+<!-- ========= FEATURED CREATIONS ========= -->
+<section id="work" class="section container">
+  <h3>Featured Creations</h3>
+
+  <div class="grid">
+
+    <!-- SUBLIMATED MUG/TUMBLER -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/mug-valentines.jpg"
+             alt="Custom sublimated mug and tumbler"
+             class="card-img" />
+      </div>
+      <h4>Sublimated Mug & Tumbler</h4>
+      <p>
+        Durable, vibrant sublimated designs on mugs and tumblers —
+        perfect for personal use or thoughtful gifts.
+      </p>
+    </div>
+
+    <!-- STUFFED BALLOON -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/stuffed balloon.jpg"
+             alt="Boho stuffed balloon"
+             class="card-img" />
+      </div>
+      <h4>Stuffed Balloon (Boho)</h4>
+      <p>
+        Beautiful, fully customized boho-style stuffed balloons —
+        ideal for gifts, celebrations, and special moments.
+      </p>
+    </div>
+
+    <!-- SUBLIMATION VENDING MACHINE -->
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="assets/Valentine box.png"
+             alt="Sublimation vending machine"
+             class="card-img" />
+      </div>
+      <h4>Sublimation Vending Machine</h4>
+      <p>
+        Interactive, customized vending machines —
+        perfect for events, parties, pop-ups, or small businesses.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section-soft">
+  <div class="container center">
+    <h3>Let’s Create Something Custom</h3>
+    <p>
+      Have an idea in mind or need help bringing one together?
+      Tell us about your project and we’ll take it from there.
+    </p>
+
+    <form
+      action="https://formspree.io/f/xanplyen"
+      method="POST"
+      class="contact-form"
+    >
+      <div class="form-grid">
+        <label class="field">
+          <span>Your Name</span>
+          <input type="text" name="name" placeholder="Jane Doe" required />
+        </label>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="_replyto" placeholder="you@example.com" required />
+        </label>
+      </div>
+
+      <label class="field full">
+        <span>Project Details</span>
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Tell us what you’re envisioning — item type, colors, quantity, timeline…"
+          required
+        ></textarea>
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© <span id="y"></span> Cosmo's Captivating Crafts, LLC • Mound Bayou, MS</p>
+</footer>
+
+ <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>
+
+

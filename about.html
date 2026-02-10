@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me | Cosmo's Captivating Crafts, LLC</title>
+  <meta name="description" content="Learn about Samantha, the founder of Cosmo's Captivating Crafts, LLC, and her journey from creating handmade crafts for her kids to building a thriving business.">
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="glossy">
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+  <div class="container header-flex">
+    <a class="brand-wrap" href="#top" aria-label="Home"> 
+      <h1 class="brand">Cosmo's Captivating Crafts, LLC</h1>
+    </a>
+
+  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+  <nav id="primary-nav" class="nav" role="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Our Story</a>
+      <a href="products.html">What We Create</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  </header>
+
+<div style="text-align:center;">
+  <h2>Our Story</h2>
+  <p>Faith • Family • Creativity</p>
+</div>
+
+</section>
+
+  <!-- ABOUT ME WITH HEADSHOT -->
+  <section class="section container">
+    <div class="grid" style="justify-items:center; max-width:800px; margin:auto; gap:30px;">
+
+      <!-- Headshot -->
+      <div class="card" style="max-width:300px;">
+        <div class="card-img-wrap">
+          <img src="assets/headshot.jpg" alt="Samantha Simmons" class="card-img" />
+        </div>
+        <h4>Samantha Simmons</h4>
+        <p>Founder & Creative Director</p>
+      </div>
+
+      <!-- About Text -->
+      <div class="about-text" style="text-align:left;">
+        <p>
+          I am a proud wife and mother of six children. My journey into crafting began out of necessity. I wanted to create beautiful, memorable parties for my children, but could not afford expensive setups. Starting small, I invested in a vinyl cutter, a Cameo machine, a small heat press, and a basic printer.
+        </p>
+        <p>
+          Unable to maintain a traditional job due to family commitments, I turned to self-employment and began exploring various skills to earn income. Each year I expanded my skills and offerings, gradually growing my business.
+        </p>
+        <p>
+          Academically, I hold an associate degree in sociology and have been active in the education field for three years. My experience in education, computer management, and community work shaped my approach to business and service.
+        </p>
+        <p>
+          In 2018, I started my journey in self-employment through a call center. During Covid 2020, I gained interest in customizing party favors. My resilience and determination grew even stronger after relocating back to my hometown, Mound Bayou, MS, in 2022.
+        </p>
+        <p>
+          Recently, I moved to the Austin area to further expand my business and create even more opportunities for custom, heartfelt creations. Each day I strive to improve my craft, serve my clients better, and continue building my entrepreneurial dream.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Cosmo's Captivating Crafts, LLC • Mound Bayou, MS</p>
+  </footer>
+
+  <script>
+    // Automatically update year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+ <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>
+
