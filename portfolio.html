@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Cosmo's Captivating Crafts</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .gallery-section {
+      width: min(1200px, 92%);
+      margin: 55px auto 80px;
+    }
+
+    .gallery-note {
+      text-align: center;
+      color: var(--muted);
+      margin: 0 auto 28px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .gallery-photo {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(70, 50, 100, 0.09);
+      aspect-ratio: 1 / 1;
+    }
+
+    .gallery-photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-photo:hover img {
+      transform: scale(1.04);
+    }
+
+    @media (max-width: 800px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .gallery-section {
+        width: 94%;
+        margin: 35px auto 55px;
+      }
+
+      .gallery-grid {
+        gap: 10px;
+      }
+
+      .gallery-photo {
+        border-radius: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        ✿ <span>Cosmo's Captivating Crafts</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="packages.html">Packages &amp; Services</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Heading -->
+  <section class="page-hero">
+    <p class="eyebrow pink">OUR PORTFOLIO</p>
+    <h1>Our Creations</h1>
+    <p>
+      A gallery of custom work from
+      Cosmo's Captivating Crafts.
+    </p>
+  </section>
+
+  <!-- Photo Gallery -->
+  <main class="gallery-section">
+
+    <p class="gallery-note">
+      A little inspiration from our creative collection.
+    </p>
+
+    <div class="gallery-grid">
+
+
+      <figure class="gallery-photo">
+        <img src="assets/apron2.png"
+             alt="cowboy apron"
+             loading="lazy">
+        </figure>
+ 
+      <figure class="gallery-photo">
+        <img src="assets/game board.png"
+             alt="love board"
+             loading="lazy">
+      </figure>
+
+     <figure class="gallery-photo">
+        <img src="assets/party favors.jpg"
+             alt="roblox favors"
+             loading="lazy">
+     </figure>   
+
+      <figure class="gallery-photo">
+        <img src="assets/party banner1.jpg"
+             alt="Graduation and event creation"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/mem necklace.jpeg"
+             alt="Personalized memorial necklace"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/hoodie.png"
+             alt="Custom apparel design"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/Car-decal.jpg"
+             alt="Custom car decal"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/ribbons.jpg"
+             alt="Memorial ribbon creation"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/tshirt ad.jpg"
+             alt="Custom shirt and promotional design"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/ashtray.jpg"
+             alt="Lupus-themed ashtray"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/bebe kids.png"
+             alt="Bebe Kids bathroom set"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/bookbags.jpg"
+             alt="Bluey bookbag"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/caps.jpg"
+             alt="Gift box hats"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/delco shirt.jpg"
+             alt="School shirt for Delco"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/dishware.jpg"
+             alt="Custom dish sets"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/family renion shirts.jpg"
+             alt="Family reunion shirts"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/gift cards.jpg"
+             alt="Personalized gift cards"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/jstate.png"
+             alt="Jackson State University T-shirt"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/keychains.jpg"
+             alt="School keychains"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/apron.png"
+             alt="steelers apron"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/Patriots Ashtray.png"
+             alt="Patriots-themed ashtray"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/stole toddler.png"
+             alt="Custom toddler graduation stole"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/truck decal.jpg"
+             alt="Custom truck decal"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/tumber and cup.jpg"
+             alt="Custom tumbler and cup set"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/workbook.jpg"
+             alt="Custom school binder"
+             loading="lazy">
+      </figure>
+
+      <figure class="gallery-photo">
+        <img src="assets/banner.jpg"
+             alt="welcome sign"
+             loading="lazy">
+      </figure>
+
+     <figure class="gallery-photo">
+        <img src="assets/funeral ad.jpg"
+             alt="obituary"
+             loading="lazy">
+      </figure>
+
+
+    </div>
+
+    <!-- Custom Order Section -->
+    <div class="cta-box">
+      <h2>Ready for Something Custom?</h2>
+      <p>
+        Tell us what you have in mind and let's bring
+        your idea to life.
+      </p>
+
+      <a class="btn primary" href="index.html#contact">
+        Start a Custom Order
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>✿ Cosmo's Captivating Crafts, LLC</p>
+    <small>Creative. Personal. Made with love.</small>
+  </footer>
+
+</body>
+</html>
+

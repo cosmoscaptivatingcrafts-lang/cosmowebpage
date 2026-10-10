@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Packages & Services | Cosmo's Captivating Crafts</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+  /* Packages & Services page layout */
+  .package-section { margin: 3.5rem 0; }
+  .package-section-title,
+  .section-heading { margin-bottom: 1.5rem; }
+  .package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .package-card {
+    height: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-self: stretch;
+  }
+  /* Keep package labels and headings on a shared baseline across each row. */
+  .package-card .package-type {
+    display: block;
+    min-height: 1.4em;
+    margin-bottom: 0.35rem;
+  }
+  .package-card h3 {
+    line-height: 1.3;
+    min-height: 2.6em;
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+  .package-card .package-icon {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .package-card h3 { line-height: 1.3; }
+  .package-card .package-price { margin-bottom: 0.75rem; }
+  .package-card ul { margin-bottom: 1.5rem; }
+  .package-card .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: auto;
+    padding: 0.8rem 1rem;
+    line-height: 1.3;
+  }
+  .package-section-title h2,
+  .section-heading h2 { margin-top: 0; }
+  @media (max-width: 900px) {
+    .package-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 620px) {
+    .package-grid { grid-template-columns: 1fr; }
+    .package-section { margin: 2.5rem 0; }
+  }
+</style>
+
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">✿ <span>Cosmo's Captivating Crafts</span></a>
+    <nav>
+<a href="index.html">Home</a>
+<a href="about.html">Our Story</a>
+<a href="packages.html">Packages & Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <p class="eyebrow pink">PACKAGES & SERVICES</p>
+  <h1>More Than a Craft Shop</h1>
+  <p>Complete packages and creative services designed to make your event, home, business or special moment easier.</p>
+</section>
+
+<main class="section">
+  <p class="package-intro">
+    Choose a package that fits your needs, or request a custom package built around your vision.
+    Package pricing can be customized based on products, quantities, personalization and timeline.
+  </p>
+
+  <section class="package-section">
+    <div class="package-section-title">
+      <p class="eyebrow pink">HOME</p>
+      <h2>Home & Lifestyle Packages</h2>
+      <p>Personalized sets designed to coordinate your space.</p>
+    </div>
+    <div class="package-grid">
+
+      <article class="package-card">
+        <div class="package-icon pink-bg">🛁</div>
+        <span class="package-type">Home Package</span>
+        <h3>Bathroom Refresh Set</h3>
+        <div class="package-price">Starting at $45</div>
+        <p>A coordinated personalized bathroom set.</p>
+        <ul>
+          <li>Bath rug/mat</li>
+          <li>Hand towel</li>
+          <li>Washcloth</li>
+          <li>Personalized soap/lotion bottle</li>
+          <li>Custom color or theme</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon blue-bg">🍳</div>
+        <span class="package-type">Home Package</span>
+        <h3>Kitchen Essentials Set</h3>
+        <div class="package-price">Starting at $50</div>
+        <p>Matching pieces for a personalized kitchen.</p>
+        <ul>
+          <li>Oven mitt</li>
+          <li>Pot holder</li>
+          <li>Kitchen towel</li>
+          <li>Dish towel</li>
+          <li>Kitchen rug</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon lavender-bg">🏠</div>
+        <span class="package-type">Home Package</span>
+        <h3>New Home Starter</h3>
+        <div class="package-price">Starting at $125</div>
+        <p>A custom collection for a new home or housewarming gift.</p>
+        <ul>
+          <li>Bathroom set</li>
+          <li>Kitchen set</li>
+          <li>Personalized welcome sign</li>
+          <li>Two custom mugs</li>
+          <li>Personalized home décor piece</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+    </div>
+  </section>
+
+  
+  <section class="package-section">
+    <div class="package-section-title">
+      <p class="eyebrow pink">PERSONALIZED GIFTS</p>
+      <h2>Personalized Gifts &amp; Drinkware Packages</h2>
+      <p>Thoughtful custom gifts and coordinated drinkware for birthdays, holidays, appreciation, and everyday celebrations.</p>
+    </div>
+    <div class="package-grid">
+      <article class="package-card">
+        <div class="package-icon pink-bg" aria-hidden="true">🎁</div>
+        <span class="package-type">Gift Package</span>
+        <h3>Personalized Gift Set</h3>
+        <div class="package-price">Custom quote</div>
+        <p>A personalized gift built around the recipient and occasion.</p>
+        <ul>
+          <li>Choice of available personalized items</li>
+          <li>Name, message, or custom design</li>
+          <li>Color or theme coordination</li>
+          <li>Options tailored to your budget</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">Request a Gift Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon blue-bg" aria-hidden="true">🥤</div>
+        <span class="package-type">Drinkware Package</span>
+        <h3>Drinkware &amp; Accessories Bundle</h3>
+        <div class="package-price">Custom quote</div>
+        <p>Coordinated drinkware and personalized extras for a practical, memorable gift.</p>
+        <ul>
+          <li>Custom tumbler or mug</li>
+          <li>Personalized design or wording</li>
+          <li>Optional matching accessories</li>
+          <li>Theme and color coordination</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">Request a Drinkware Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon lavender-bg" aria-hidden="true">💝</div>
+        <span class="package-type">Custom Gift Collection</span>
+        <h3>Special Occasion Gift Collection</h3>
+        <div class="package-price">Custom quote</div>
+        <p>A coordinated collection of custom items for a milestone or special celebration.</p>
+        <ul>
+          <li>Multiple personalized items</li>
+          <li>One coordinated theme or design</li>
+          <li>Occasion-specific customization</li>
+          <li>Item selection based on your needs</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">Build My Gift Collection</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="package-section">
+    <div class="package-section-title">
+      <p class="eyebrow blue">APPAREL</p>
+      <h2>Custom Apparel Packages</h2>
+      <p>Custom wearable designs for individuals, families, reunions, school events, celebrations, and businesses.</p>
+    </div>
+    <div class="package-grid">
+      <article class="package-card">
+        <div class="package-icon pink-bg" aria-hidden="true">👕</div>
+        <span class="package-type">Individual Apparel</span>
+        <h3>Custom Shirt Package</h3>
+        <div class="package-price">Custom quote</div>
+        <p>A personalized shirt made for your message, style, or occasion.</p>
+        <ul>
+          <li>Custom shirt design</li>
+          <li>Choice of available shirt options</li>
+          <li>Names, wording, or graphics</li>
+          <li>Pricing based on size and design</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">Request an Apparel Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon blue-bg" aria-hidden="true">👚</div>
+        <span class="package-type">Matching Apparel</span>
+        <h3>Matching Shirt Bundle</h3>
+        <div class="package-price">Custom quote</div>
+        <p>Coordinated shirts for families, friends, teams, or small groups.</p>
+        <ul>
+          <li>Matching or coordinated designs</li>
+          <li>Names or individual details when requested</li>
+          <li>Multiple sizes</li>
+          <li>Quote based on quantity and materials</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">Request a Bundle Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon lavender-bg" aria-hidden="true">🎓</div>
+        <span class="package-type">Group &amp; Event Apparel</span>
+        <h3>Group &amp; Event Apparel Package</h3>
+        <div class="package-price">Custom quote</div>
+        <p>Custom apparel for reunions, celebrations, school activities, and business events.</p>
+        <ul>
+          <li>Event or group-themed designs</li>
+          <li>Bulk order planning</li>
+          <li>Size and quantity coordination</li>
+          <li>Optional matching graduation or event items</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">Plan My Apparel Order</a>
+      </article>
+    </div>
+  </section>
+
+<section class="package-section">
+    <div class="package-section-title">
+      <p class="eyebrow blue">CELEBRATIONS</p>
+      <h2>Event & Graduation Packages</h2>
+      <p>Take the guesswork out of coordinating your custom event items.</p>
+    </div>
+    <div class="package-grid">
+
+      <article class="package-card">
+        <div class="package-icon pink-bg">🎉</div>
+        <span class="package-type">Party Package</span>
+        <h3>Mini Party Package</h3>
+        <div class="package-price">Starting at $50</div>
+        <p>A simple coordinated party favor package.</p>
+        <ul>
+          <li>Personalized party favors</li>
+          <li>Cupcake toppers</li>
+          <li>Juice labels</li>
+          <li>Custom theme</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon blue-bg">🎂</div>
+        <span class="package-type">Party Package</span>
+        <h3>Party Deluxe</h3>
+        <div class="package-price">Starting at $100</div>
+        <p>A larger coordinated party setup.</p>
+        <ul>
+          <li>Personalized party favors</li>
+          <li>Cupcake toppers</li>
+          <li>Juice labels</li>
+          <li>Custom banner</li>
+          <li>Cake topper</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon lavender-bg">🎓</div>
+        <span class="package-type">Graduation</span>
+        <h3>Grad Celebration</h3>
+        <div class="package-price">Starting at $150+</div>
+        <p>Personalized graduation pieces for the graduate and celebration.</p>
+        <ul>
+          <li>Graduation stole</li>
+          <li>Graduation fan</li>
+          <li>Custom shirt</li>
+          <li>Banner</li>
+          <li>Party favors or cupcake toppers</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+    </div>
+  </section>
+
+<section class="package-section">
+  <div class="package-section-title">
+    <p class="eyebrow lavender">EDUCATION</p>
+    <h2>Educational Assistant (EA) Support</h2>
+    <p>Classroom organization, printable educational materials, visual supports, and data-entry assistance for educators and educational assistants.</p>
+  </div>
+
+  <div class="package-grid">
+    <article class="package-card">
+      <div class="package-icon lavender-bg" aria-hidden="true">📚</div>
+      <span class="package-type">EA Support</span>
+      <h3>Classroom Design Package</h3>
+      <div class="package-price">Starting at $75</div>
+      <p>Create a more organized, functional, and student-friendly classroom with customized visual materials.</p>
+      <ul>
+        <li>Classroom theme and design planning</li>
+        <li>Printable classroom labels</li>
+        <li>Visual schedules and classroom signs</li>
+        <li>Behavior and reinforcement visuals</li>
+        <li>Student organization materials</li>
+        <li>Customized classroom materials</li>
+      </ul>
+      <a class="btn primary" href="index.html#contact">Request an EA Quote</a>
+    </article>
+
+    <article class="package-card">
+      <div class="package-icon blue-bg" aria-hidden="true">📊</div>
+      <span class="package-type">EA / Administrative Support</span>
+      <h3>Data Input &amp; Organization</h3>
+      <div class="package-price">Starting at $50</div>
+      <p>Administrative data-entry support to help organize classroom or business information.</p>
+      <ul>
+        <li>Data entry and information input</li>
+        <li>Spreadsheet organization</li>
+        <li>Student and classroom information organization</li>
+        <li>Document and list formatting</li>
+        <li>Digital file organization</li>
+        <li>Custom data-entry projects</li>
+      </ul>
+      <a class="btn primary" href="index.html#contact">Request an EA Quote</a>
+    </article>
+
+    <article class="package-card">
+      <div class="package-icon pink-bg" aria-hidden="true">🧩</div>
+      <span class="package-type">EA Bundle</span>
+      <h3>EA Classroom Support Bundle</h3>
+      <div class="package-price">Starting at $125</div>
+      <p>A combined classroom design and data-organization package for educators and educational assistants.</p>
+      <ul>
+        <li>Classroom design materials</li>
+        <li>Visual classroom supports</li>
+        <li>Printable organization tools</li>
+        <li>Data input and spreadsheet organization</li>
+        <li>Custom classroom forms and lists</li>
+        <li>Project customized to classroom needs</li>
+      </ul>
+      <a class="btn primary" href="index.html#contact">Request an EA Quote</a>
+    </article>
+  </div>
+</section>
+
+  <section class="package-section">
+    <div class="package-section-title">
+      <p class="eyebrow pink">BUSINESS</p>
+      <h2>Business Setup Packages</h2>
+      <p>Creative and organizational support for entrepreneurs getting started or leveling up.</p>
+    </div>
+    <div class="package-grid">
+
+      <article class="package-card">
+        <div class="package-icon pink-bg">💼</div>
+        <span class="package-type">Business</span>
+        <h3>Business Starter</h3>
+        <div class="package-price">Starting at $125</div>
+        <p>Get the basic visual pieces together for your business.</p>
+        <ul>
+          <li>Business card design</li>
+          <li>Flyer design</li>
+          <li>Logo setup</li>
+          <li>Social media profile graphics</li>
+          <li>QR code</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon blue-bg">🚀</div>
+        <span class="package-type">Business</span>
+        <h3>Business Launch</h3>
+        <div class="package-price">Starting at $250</div>
+        <p>A stronger launch package for a new or growing business.</p>
+        <ul>
+          <li>Logo</li>
+          <li>Business cards</li>
+          <li>Flyer</li>
+          <li>Thank-you cards</li>
+          <li>Service/pricing menu</li>
+          <li>Social media graphics</li>
+          <li>QR code</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon lavender-bg">📈</div>
+        <span class="package-type">Business</span>
+        <h3>Business Pro</h3>
+        <div class="package-price">Starting at $450+</div>
+        <p>Branding, promotional and digital organization support.</p>
+        <ul>
+          <li>Brand identity</li>
+          <li>Business cards</li>
+          <li>Flyer/brochure</li>
+          <li>Service menu</li>
+          <li>Social media templates</li>
+          <li>QR code</li>
+          <li>Website support</li>
+          <li>Digital intake/order form</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="package-section">
+    <div class="package-section-title">
+      <p class="eyebrow blue">ADMINISTRATIVE SUPPORT</p>
+      <h2>Virtual Assistant Services</h2>
+      <p>Professional administrative support for small businesses and busy professionals.</p>
+    </div>
+    <div class="package-grid">
+
+      <article class="package-card">
+        <div class="package-icon pink-bg">💻</div>
+        <span class="package-type">VA Service</span>
+        <h3>VA Starter</h3>
+        <div class="package-price">Starting at $100</div>
+        <p>Basic administrative support when you need an extra set of hands.</p>
+        <ul>
+          <li>Email organization</li>
+          <li>Data entry</li>
+          <li>Document formatting</li>
+          <li>Basic scheduling</li>
+          <li>File organization</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">Request VA Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon blue-bg">📋</div>
+        <span class="package-type">VA Service</span>
+        <h3>Business Support</h3>
+        <div class="package-price">Starting at $200</div>
+        <p>Ongoing help with everyday business administration.</p>
+        <ul>
+          <li>Email management</li>
+          <li>Calendar management</li>
+          <li>Data entry</li>
+          <li>Document creation</li>
+          <li>Customer follow-up</li>
+          <li>Social media scheduling</li>
+          <li>File organization</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">Request VA Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon lavender-bg">📅</div>
+        <span class="package-type">Monthly Service</span>
+        <h3>Monthly VA Support</h3>
+        <div class="package-price">Starting at $375/month</div>
+        <p>Recurring administrative assistance tailored to your business.</p>
+        <ul>
+          <li>Dedicated monthly support hours</li>
+          <li>Email and calendar support</li>
+          <li>Customer communication</li>
+          <li>Data entry</li>
+          <li>Document preparation</li>
+          <li>Social media assistance</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">Request Monthly Quote</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="package-section">
+    <div class="package-section-title">
+      <p class="eyebrow pink">MEMORIAL</p>
+      <h2>Memorial Packages</h2>
+      <p>Thoughtful coordinated pieces for honoring and remembering someone special.</p>
+    </div>
+    <div class="package-grid">
+
+      <article class="package-card">
+        <div class="package-icon pink-bg">🕊️</div>
+        <span class="package-type">Memorial</span>
+        <h3>Memorial Essentials</h3>
+        <div class="package-price">Starting at $75</div>
+        <p>Core memorial items for a service or tribute.</p>
+        <ul>
+          <li>Memorial programs/obituary</li>
+          <li>Memorial pins</li>
+          <li>Memorial ribbons</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon blue-bg">🤍</div>
+        <span class="package-type">Memorial</span>
+        <h3>Memorial Tribute</h3>
+        <div class="package-price">Starting at $125</div>
+        <p>A more personalized collection of remembrance pieces.</p>
+        <ul>
+          <li>Programs</li>
+          <li>Pins</li>
+          <li>Ribbons</li>
+          <li>Memorial keepsake</li>
+          <li>Photo tribute item</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+      <article class="package-card">
+        <div class="package-icon lavender-bg">🕯️</div>
+        <span class="package-type">Memorial</span>
+        <h3>Complete Memorial Package</h3>
+        <div class="package-price">Starting at $200+</div>
+        <p>Coordinated memorial products for a fuller tribute.</p>
+        <ul>
+          <li>Programs</li>
+          <li>Pins</li>
+          <li>Ribbons</li>
+          <li>Keepsakes</li>
+          <li>Memorial banner</li>
+          <li>Additional tribute items</li>
+        </ul>
+        <a class="btn primary" href="index.html#contact">View Package & Request Quote</a>
+      </article>
+
+    </div>
+  </section>
+
+ <p class="package-note">
+    Starting prices are based on standard quantities and designs. Final pricing may vary based on customization, quantity, materials, design complexity, rush turnaround, delivery/setup, and requested upgrades. Ask about a custom package if you need something different.
+  </p>
+
+  <div class="service-band">
+    <p class="eyebrow pink">CUSTOM PACKAGE BUILDER</p>
+    <h2>Don't See the Perfect Package?</h2>
+    <p>Build your own package by telling us your occasion, products, quantities, colors, theme and personalization needs.</p>
+    <a class="btn primary" href="index.html#contact">Build My Custom Package</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>✿ Cosmo's Captivating Crafts, LLC</p>
+  <small>Creative. Personal. Made with love.</small>
+</footer>
+
+</body>
+</html>
